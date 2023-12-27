@@ -46,7 +46,7 @@ items = {
         "U" : {"name" : "Cheese Croissant", "price": 10.00, "stock" : 20},
         "V" : {"name" : "Chocolate Croissant", "price": 10.00, "stock" : 20},
         "W" : {"name" : "Chicken Sandwich", "price": 14.00, "stock" : 20},
-        "X" : {"name" : "Vegetable Sandwich", "price": 13.50, "stock" : 20},
+        "X" : {"name" : "Vegetable Sandwich", "price": 13.50, "stock" : 1},
         "Y" : {"name" : "Tuna Sandwich", "price": 10.00, "stock" : 20},
         "Z" : {"name" : "Egg Sandwich", "price": 12.00, "stock" : 20}
     },
