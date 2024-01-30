@@ -93,7 +93,7 @@ def get_money(items, code):
         money = float(input("Enter the amount of money: "))
         if money >= item["price"]:
             return money
-        print(f"The money is not enough. Please insert {item["price"] - money:.2f} dhs more.")
+        print(f"The money is not enough. Please insert {item['price'] - money:.2f} dhs more.")
 
 #function to dispense the product and count change
 def dispense_item(items, code, money):
@@ -111,18 +111,18 @@ def dispense_item(items, code, money):
         item["stock"]-=1
         print(f"Returning {change:.2f}dhs change...\n")
     else:
-        print(f"\nError: {item["name"]} is out of stock.")
+        print(f"\nError: {item['name']} is out of stock.")
 
 #function to suggest another purchase
 def additional_purchase(items, code):
     if code in items["Fizzy Drinks"]:
         print("You might also like: ")
         for code, item in items["Snacks"].items():
-            print(f"{code}: {item["name"]} ({item["price"]:.2f}dhs)")
+            print(f"{code}: {item['name']} ({item['price']:.2f}dhs)")
     elif code in items["Snacks"]:
         print("You might also like:")
         for code, item in items["Fizzy Drinks"].items():
-            print(f"{code}: {item["name"]} ({item["price"]:.2f}dhs)")
+            print(f"{code}: {item['name']} ({item['price']:.2f}dhs)")
 
 #Code that displays the Vending machine 
 while True:
